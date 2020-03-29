@@ -1,5 +1,8 @@
 //header
 
+//обработка выподающего меню
+
+
 //Обработка скрола
 const MENU = document.getElementById('main__menu');  
 let avgHeight = 0;
@@ -43,61 +46,61 @@ document.addEventListener('scroll', event => {
 
 //slaider
 
- let slideIndex = 1,
-    slides = document.getElementsByClassName('slide__item'),
-    left = document.querySelector('.promo__arrow-left'),
-    right = document.querySelector('.promo__arrow-right'); 
+//  let slideIndex = 1,
+//     slides = document.getElementsByClassName('slide__item'),
+//     left = document.querySelector('.promo__arrow-left'),
+//     right = document.querySelector('.promo__arrow-right'); 
 
-     showSlides(slideIndex);
+//      showSlides(slideIndex);
 
 
-    function showSlides(n)  {
-        if (n > slides.length) {
-            slideIndex = 1;
-        };
+//     function showSlides(n)  {
+//         if (n > slides.length) {
+//             slideIndex = 1;
+//         };
 
-        if (n < 1) {
-            slideIndex = slides.length;
-        };
+//         if (n < 1) {
+//             slideIndex = slides.length;
+//         };
 
-        for (let i = 0 ; i < slides.length; i++) { // скрываем слайды
-           slides[i].style.display ='none';                                               
-        };
+//         for (let i = 0 ; i < slides.length; i++) { // скрываем слайды
+//            slides[i].style.display ='none';                                               
+//         };
 
-        slides[slideIndex - 1].style.display ='block'; 
-    };    
+//         slides[slideIndex - 1].style.display ='block'; 
+//     };    
 
-    function plusSlides(n) {
-        showSlides(slideIndex+=n);
-    }
+//     function plusSlides(n) {
+//         showSlides(slideIndex+=n);Ы
+//     }
 
-    left.addEventListener('click', function(){
-        plusSlides(-1);    
-        slides[slideIndex - 1].classList.remove('.promo__arrow-left');  
-        slides[slideIndex - 1].classList.add('.promo__arrow-right');
-    })
+//     left.addEventListener('click', function(){
+//         plusSlides(-1);    
+//         slides[slideIndex - 1].classList.remove('.promo__arrow-left');  
+//         slides[slideIndex - 1].classList.add('.promo__arrow-right');
+//     })
 
-    right.addEventListener('click', function(){
-        plusSlides(1);
-        slides[slideIndex - 1].classList.remove('.promo__arrow-right');  
-        slides[slideIndex - 1].classList.add('.promo__arrow-left');      
-    });
+//     right.addEventListener('click', function(){
+//         plusSlides(1);
+//         slides[slideIndex - 1].classList.remove('.promo__arrow-right');  
+//         slides[slideIndex - 1].classList.add('.promo__arrow-left');      
+//     });
 
 
 //phoneOff
 
 function phonesVertical (){
-    document.getElementsByClassName('bcg_vertical')[0].classList.toggle('dispOff');
+    document.getElementsByClassName('screen')[0].classList.toggle('dispOff');
 }
 document.getElementById('phone__ver').addEventListener('click', phonesVertical);
-document.getElementsByClassName('bcg_vertical')[0].addEventListener('click', phonesVertical);
+document.getElementsByClassName('screen')[0].addEventListener('click', phonesVertical);
 
 
 function phonesHorizontal (){
-    document.getElementsByClassName('bcg_horizontal')[0].classList.toggle('dispOff');
+    document.getElementsByClassName('screen2')[0].classList.toggle('dispOff');
 }
 document.getElementById('phone__hor').addEventListener('click', phonesHorizontal);
-document.getElementsByClassName('bcg_horizontal')[0].addEventListener('click', phonesHorizontal);
+document.getElementsByClassName('screen2')[0].addEventListener('click', phonesHorizontal);
 
 //Portfolio
 //табы
@@ -111,7 +114,7 @@ AddPortfolioClicHendler.addEventListener('click', function(event){
 
     //цикл для переммешивания картинок
 
-    let a = document.querySelectorAll('.layoyt-4-column__image');
+    let a = document.querySelectorAll('.image_port');
     let arr = [].slice.call(a)   //возводим a в мвссив
     function compareRandom() {
         

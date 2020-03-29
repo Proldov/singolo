@@ -9,9 +9,12 @@
 <body>
     <header class="header">
         <div class="wrapper header__wrapper">
-            <h1 class="logo">singolo<span class="star">*</span></h1>
-            <nav class="header__navigation">
-                <ul class="navigation" id="main__menu">
+            <span id="menu__icon" class="icon_burger">&#9776</span>
+            <!-- <a  class="icon_burger" href="#">&#9776</a> -->
+            <h1 class="logo logo__responce">singolo<span class="star">*</span></h1>
+            <nav class="responce__navigation">
+                <ul class="phone__navigation" id="phone__menu">
+                    
                     <li class="navigation__item"><a class="navigation__link navigation__link_bordered" href="#link-home">Home</a></li>
                     <li class="navigation__item"><a class="navigation__link" href="#link_sevices">Services</a></li>
                     <li class="navigation__item"><a class="navigation__link" href="#link-portfolio">Portfolio</a></li>
@@ -19,33 +22,51 @@
                     <li class="navigation__item"><a class="navigation__link" href="#link-contacts">Contact</a></li>
                 </ul>
             </nav>
-        </div>
+            <nav class="header__navigation">
+                <ul class="navigation" id="main__menu">                 
+                    <li class="navigation__item"><a class="navigation__link navigation__link_bordered" href="#link-home">Home</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#link_sevices">Services</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#link-portfolio">Portfolio</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#link-about">About</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#link-contacts">Contact</a></li>
+                </ul>
+            </nav>
+            
+        </div> 
     </header>
     <main>
         <section class="promo" id="link-home">
             <div class="wrapper promo__wrapper" id="slder">
-                
-                <div class="slide__item fade slide__one">
-                    <img src="assets/img/iPhone Vertical.png" class="promo__iphone-vertical" id="phone__ver" alt="iphone-vertical">
-                    <img src="assets\img\phone-vertical-display.png" class="bcg_vertical" alt="">               
-                    <img src="assets/img/iPhone Horizontal.png" class="promo__iphone-horizontal" id="phone__hor" alt="iphone-horizontal">
-                    <img src="assets\img\Vector.png" class="bcg_horizontal" alt="">
-                </div>
-                 <div class="slide__item fade slide__two">
-                    <img class="phone_img" src="assets\img\Slide-2.jpg" alt="">
-                </div>
-              
                 <div class="arrow-slider">
                     <img src="assets/img/left.png" class="promo__arrow-left arrow" alt="left">
                     <img src="assets/img/right.png" class="promo__arrow-right arrow" alt="right">
                 </div>
+                <div class="slide__item fade slide__one">
+                    <div class="phone__pos">
+                        <div class="screen"></div>
+                        <img src="assets/img/iPhone Vertical.png" class="promo__iphone-vertical adaptive__phone" id="phone__ver" alt="iphone-vertical">
+                        
+                        <!-- <img src="assets\img\phone-vertical-display.png" class="bcg_vertical adaptive__block" alt="">  -->
+                    </div>              
+                    <div class="phone__pos">
+                        <img src="assets/img/iPhone Horizontal.png" class="promo__iphone-horizontal adaptive__phone2" id="phone__hor" alt="iphone-horizontal">
+                        <div class="screen2"></div>
+                        <!-- <img src="assets\img\Vector.png" class="bcg_horizontal adaptive__block1" alt=""> -->
+                    </div>
+                    
+                </div>
+                 <!-- <div class="slide__item fade slide__two">
+                    <img class="phone_img" src="assets\img\Slide-2.jpg" alt="">
+                </div> -->
+              
+                
                 
                 
             </div>
            
         </section>
         <section class="services" id="link_sevices">
-           <div class="wrapper">
+           <div class="wrapper services__wrapper">
                 <h2 class="services__title">Our Services</h2>
                 <p class="services__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="services-layout">
@@ -83,7 +104,7 @@
             </div>
         </section>
         <section class="portfolio" id="link-portfolio"> 
-            <div class="wrapper">
+            <div class="wrapper portfolio__wrapper">
                 <h2 class="portfolio__title">Portfolio</h2>
                 <p class="portfolio__text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
                 <div class="layout-tags " id="portfolio__tags">
@@ -98,7 +119,19 @@
                 </div>
                 <div class="portfolio-layout">
                     <div class="layout-4-column" id="potfolio__image">
-                        <img class="layoyt-4-column__image" src="assets\img\Project-1.jpg" alt="image_1">
+                        <div class="image_port"> <img class="layoyt-4-column__image" src="assets\img\Project-1.jpg" alt="image_1"></div>
+                        <div class="image_port"><img class="layoyt-4-column__image" src="assets\img\Project-2.jpg" alt="image_2"></div>
+                        <div class="image_port"><img class="layoyt-4-column__image" src="assets\img\Project-3.jpg" alt="image_3"></div>
+                        <div class="image_port"><img class="layoyt-4-column__image" src="assets\img\Project-4.jpg" alt="image_4"></div>
+                        <div class="image_port"> <img class="layoyt-4-column__image" src="assets\img\Project-5.jpg" alt="image_5"></div>
+                        <div class="image_port"><img class="layoyt-4-column__image" src="assets\img\Project-6.jpg" alt="image_6"></div>
+                        <div class="image_port"><img class="layoyt-4-column__image" src="assets\img\Project-7.jpg" alt="image_7"></div>
+                        <div class="image_port"><img class="layoyt-4-column__image" src="assets\img\Project-8.jpg" alt="image_8"></div>
+                        <div class="image_port"><img class="layoyt-4-column__image" src="assets\img\Project-9.jpg" alt="image_9"></div>
+                        <div class="image_port"><img class="layoyt-4-column__image" src="assets\img\Project-10.jpg" alt="image_10"></div>
+                        <div class="image_port"><img class="layoyt-4-column__image" src="assets\img\Project-11.jpg" alt="image_11"></div>
+                        <div class="image_port"><img class="layoyt-4-column__image" src="assets\img\Project-12.jpg" alt="image_12"></div>
+                        <!-- <img class="layoyt-4-column__image" src="assets\img\Project-1.jpg" alt="image_1">
                         <img class="layoyt-4-column__image" src="assets\img\Project-2.jpg" alt="image_2">
                         <img class="layoyt-4-column__image" src="assets\img\Project-3.jpg" alt="image_3">
                         <img class="layoyt-4-column__image" src="assets\img\Project-4.jpg" alt="image_4">
@@ -109,54 +142,58 @@
                         <img class="layoyt-4-column__image" src="assets\img\Project-9.jpg" alt="image_9">
                         <img class="layoyt-4-column__image" src="assets\img\Project-10.jpg" alt="image_10">
                         <img class="layoyt-4-column__image" src="assets\img\Project-11.jpg" alt="image_11">
-                        <img class="layoyt-4-column__image" src="assets\img\Project-12.jpg" alt="image_12">
+                        <img class="layoyt-4-column__image" src="assets\img\Project-12.jpg" alt="image_12"> -->
                     </div>
                 </div>
             </div>
         </section>
         <section class="team" id="link-about">
-            <div class="wrapper">
+            <div class="wrapper team__wrapper">
                 <h2 class="team__title">About Us</h2>
                 <p class="team__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="container-team">
-                    <div class="container-team__item">
-                        <img src="assets\img\photo-1.jpg" alt="Adam Jensen">                           
-                        <h3 class="container-team__title">Adam Jensen</h3>
-						<span  class="container-team__text">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</span>
-                        <div class="social-links"> 
-                            <a class="social-links__item" href="#"><img class="social-links__image" src="assets\img\Facebook.png" alt="Facebook"></a>
-                            <a class="social-links__item" href="#"><img class="social-links__image" src="assets\img\Google.png" alt="Google"></a>
-                            <a class="social-links__item" href="#"><img class="social-links__image" src="assets\img\Twitter.png" alt="Twitter"></a>
-                            <a class="social-links__item" href="#"><img class="social-links__image" src="assets\img\LinkedIn.png" alt="LinkedIn"></a>
-                        </div>                             
-                    </div>
-                    <div class="container-team__item">
-                        <img src="assets\img\photo-2.jpg" alt="Desmond Miles">                          
-                        <h3 class="container-team__title">Desmond Miles</h3>
-						<span  class="container-team__text">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</span>
-                        <div class="social-links"> 
-                            <a class="social-links__item" href="#"><img class="social-links__image" src="assets\img\Facebook.png" alt="Facebook"></a>
-                            <a class="social-links__item" href="#"><img class="social-links__image" src="assets\img\Google.png" alt="Google"></a>
-                            <a class="social-links__item" href="#"><img class="social-links__image" src="assets\img\Twitter.png" alt="Twitter"></a>
-                            <a class="social-links__item" href="#"><img class="social-links__image" src="assets\img\LinkedIn.png" alt="LinkedIn"></a>
-                        </div>   
-                    </div>
-                    <div class="container-team__item">
-                        <img src="assets\img\photo-3.jpg" alt="Scolara Visari">                             
-                        <h3 class="container-team__title">Scolara Visari</h3>
-						<span class="container-team__text">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</span>
-                         <div  class="social-links"> 
-                            <a class="social-links__item" href="#"><img class="social-links__image" src="assets\img\Facebook.png" alt="Facebook"></a>
-                            <a class="social-links__item" href="#"><img class="social-links__image" src="assets\img\Google.png" alt="Google"></a>
-                            <a class="social-links__item" href="#"><img class="social-links__image" src="assets\img\Twitter.png" alt="Twitter"></a>
-                            <a class="social-links__item" href="#"><img class="social-links__image" src="assets\img\LinkedIn.png" alt="LinkedIn"></a>
+                    <div class="team__photo">
+                        <div class="container-team__item">
+                            <img src="assets\img\photo-1.jpg" class="photo_item" alt="Adam Jensen">                           
+                            <h3 class="container-team__title">Adam Jensen</h3>
+                            <span  class="container-team__text">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</span>
+                            <div class="social-links"> 
+                                <a class="social-links__item" href="#"><img class="social-links__image" src="assets\img\Facebook.png" alt="Facebook"></a>
+                                <a class="social-links__item" href="#"><img class="social-links__image" src="assets\img\Google.png" alt="Google"></a>
+                                <a class="social-links__item" href="#"><img class="social-links__image" src="assets\img\Twitter.png" alt="Twitter"></a>
+                                <a class="social-links__item" href="#"><img class="social-links__image" src="assets\img\LinkedIn.png" alt="LinkedIn"></a>
+                            </div>                             
+                        </div>
+                        <div class="container-team__item">
+                            <img src="assets\img\photo-2.jpg" class="photo_item" alt="Desmond Miles">                          
+                            <h3 class="container-team__title">Desmond Miles</h3>
+                            <span  class="container-team__text">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</span>
+                            <div class="social-links"> 
+                                <a class="social-links__item" href="#"><img class="social-links__image" src="assets\img\Facebook.png" alt="Facebook"></a>
+                                <a class="social-links__item" href="#"><img class="social-links__image" src="assets\img\Google.png" alt="Google"></a>
+                                <a class="social-links__item" href="#"><img class="social-links__image" src="assets\img\Twitter.png" alt="Twitter"></a>
+                                <a class="social-links__item" href="#"><img class="social-links__image" src="assets\img\LinkedIn.png" alt="LinkedIn"></a>
+                            </div>   
+                        </div>
+                        <div class="container-team__item">
+                            <img src="assets\img\photo-3.jpg" class="photo_item" alt="Scolara Visari">                             
+                            <h3 class="container-team__title">Scolara Visari</h3>
+                            <span class="container-team__text">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</span>
+                             <div  class="social-links"> 
+                                <a class="social-links__item" href="#"><img class="social-links__image" src="assets\img\Facebook.png" alt="Facebook"></a>
+                                <a class="social-links__item" href="#"><img class="social-links__image" src="assets\img\Google.png" alt="Google"></a>
+                                <a class="social-links__item" href="#"><img class="social-links__image" src="assets\img\Twitter.png" alt="Twitter"></a>
+                                <a class="social-links__item" href="#"><img class="social-links__image" src="assets\img\LinkedIn.png" alt="LinkedIn"></a>
+                            </div>
                         </div>
                     </div>
+                   
+                    
                 </div>
             </div>
         </section>
         <section class="contacts" id="link-contacts">
-            <div class="wrapper">
+            <div class="wrapper contacts-wrapper">
                 <h2 class="contacts__title">Get a Quote</h2>
                 <p class="contacts__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="contacts__form">
